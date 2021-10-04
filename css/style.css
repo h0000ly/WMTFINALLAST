@@ -1,15 +1,19 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Stick+No+Bills:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Gemunu+Libre:wght@300;400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Architects+Daughter&display=swap');
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'Poppins', sans-serif;
+    
 }
 nav{
     position: fixed;
     z-index: 99;
     width: 100%;
     background-color: #242526;
+    font-family: 'Stick No Bills', sans-serif;
 }
 nav .nav-container{
     position: relative;
@@ -37,14 +41,14 @@ nav .nav-container{
 .nav-links li a{
     color: #f2f2f2;
     text-decoration: none;
-    font-size: 18px;
+    font-size: 1.5em;
     font-weight: 500;
     padding: 9px 15px;
     border-radius: 5px;
     transition: all 0.3s ease;
 }
 .nav-links li a:hover{
-    background: #3A3B3C;
+    background: crimson;
 }
 .nav-links .mobile-item{
     display: none;
@@ -71,6 +75,7 @@ nav .nav-container{
     padding: 0 0 0 15px;
     font-weight: 400;
     border-radius: 0px;
+    font-size: 1.3em;
 }
 .nav-container .btn{
     color: #fff;
@@ -86,7 +91,176 @@ nav .nav-container{
 nav input{
     display: none;
 }
-  
+/*parte body homepage*/
+body{
+    background-color: #4d4d4d;
+    width: 100%;
+}
+.ins-div{
+    position: relative;
+    top: 120px;
+    display: block;
+    width: 20%;
+    margin: auto;
+    padding: 20px;
+    font-size: 2em;
+    color: white;
+    background-color: #242526;
+    box-shadow: 0 0 5px 5px crimson;
+}
+.intro-section{
+    position: relative;
+    top: 70px;
+    width: 60%;
+    margin: auto;
+}
+.intro-section .article{
+    position: relative;
+    top:100px;
+    background-color: aliceblue;
+    display: flex;
+    justify-content: space-evenly;
+    width: 100%;
+    padding: 20px;
+    text-align: center;
+    margin: 15px;
+    text-align: center;
+}
+.intro-section .article video{
+    margin: 5px;
+    max-width: 500px;
+}
+.intro-section .article p{
+    font-size: 1.2em;
+    margin: 5px;
+    max-width: 400px;
+}
+.active{
+    border-bottom: 2px solid crimson;
+    border-right: 2px solid crimson;
+    border-top: 2px solid black;
+    border-left: 2px solid black;
+}
+.about-section{
+    position: relative;
+    top: 190px;
+    width: 60%;
+    background-color: white;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    margin: auto;
+    left: 15px;
+}
+.about-section .about-us-text{
+    margin-top: 70px;
+    font-size: 3em;
+    margin-bottom: 20px;
+}
+.about-section .card-container{
+    width: 90%;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: nowrap;
+    align-items: center;
+} 
+.about-section .card{
+    width: 100%;
+    background: #fff;
+    margin: 3px;
+    padding: 5px;
+}
+.about-section .card-container .card img {
+    width: 100%;
+    height: auto;
+    align-self: center;
+}
+.about-section .card-container .card .content {
+    height: 206px;
+    width: 100%;
+    text-align: center;
+    margin-top: 8px;
+}
+.about-section .card-container .card .content p {
+    font-size: 1.2rem;
+    padding: .5rem;
+    margin-bottom: 20px;
+}
+.course-section{
+    position:relative;
+    top: 260px;
+    margin-top: 30px;
+    padding-top: 70px;
+    width: 60%;
+    background-color: white;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    margin: auto;
+    left: 15px;
+}
+.course-section .courses-container-title{
+    font-size: 3em;
+    margin-bottom: 20px;
+}
+.course-section .courses-card-container{
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: nowrap;
+    align-items: center;
+}
+.course-section .courses-card-container .course-card{
+    width: auto;
+    background: #fff;
+    margin: 8px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items:center;
+}
+.course-section .courses-card-container .course-card img {
+    width: 100%;
+    height: auto;
+}
+.course-section .courses-card-container .course-card .info{
+    width: 100%;
+    text-align: center;
+    align-content: center;
+}
+.course-section .courses-card-container .course-card .info p{
+    background-color: #242526;
+    width: 100%;
+    text-align: center;
+    margin-top: 10px;
+    cursor: pointer;
+    height: 30px;
+}
+.course-section .courses-card-container .course-card .info p a{
+    color: #fff;
+    text-decoration: none;
+    font-size: 1.3em;
+    font-family: 'Architects Daughter', cursive;
+}
+.course-section .courses-card-container .course-card .info p:hover{
+    background-color: crimson;
+    transform: translateY(-5px);
+    transition: .3s;
+}
+footer{
+    position: relative;
+    top: 270px;
+    margin-top: 20px;
+    padding-top: 20px;
+    background-color: #242526;
+    color: white;
+    text-align: center;
+}
+.bolder{
+    font-weight: bolder;
+}
 
 @media screen and (max-width: 970px) {
     .nav-container .btn{
@@ -122,7 +296,7 @@ nav input{
     .nav-links li a{
         padding: 0 20px;
         display: block;
-        font-size: 20px;
+        font-size: 1.5em;
     }
     .nav-links .drop-menu{
         position: static;
@@ -145,7 +319,7 @@ nav input{
     .nav-links .mobile-item{
         display: block;
         color: #f2f2f2;
-        font-size: 20px;
+        font-size: 1.5em;
         font-weight: 500;
         padding-left: 20px;
         cursor: pointer;
@@ -153,13 +327,13 @@ nav input{
         transition: all 0.3s ease;
     }
     .nav-links .mobile-item:hover{
-        background: #3A3B3C;
+        background: crimson;
     }
     .drop-menu li{
         margin: 0;
     }
     .drop-menu li a{
         border-radius: 5px;
-        font-size: 18px;
+        font-size: 1.3em;
     }
 }
