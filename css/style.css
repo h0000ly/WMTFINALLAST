@@ -2,11 +2,15 @@
 @import url('https://fonts.googleapis.com/css2?family=Stick+No+Bills:wght@300&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Gemunu+Libre:wght@300;400&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Architects+Daughter&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@300;400&display=swap');
+:root{
+    --fontSizeP: 1.3em;
+    --fontSizeLi: 1.2em;
+}
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    
 }
 nav{
     position: fixed;
@@ -105,6 +109,7 @@ main{
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    font-family: 'Roboto Condensed', sans-serif;
 }
 main .ins-div{
     position: relative;
@@ -138,7 +143,7 @@ main .intro-section{
     max-width: 500px;
 }
 .intro-section article p{
-    font-size: 1.2em;
+    font-size: var(--fontSizeP);
     margin: 5px;
     max-width: 400px; 
 }
@@ -188,7 +193,7 @@ main .intro-section{
     margin-top: 8px;
 }
 .about-section .card-container .card .content p {
-    font-size: 1.2rem;
+    font-size: var(--fontSizeP);
     padding: .5rem;
     margin-bottom: 10px;
 }
@@ -255,21 +260,6 @@ main .intro-section{
 footer{
     position: relative;
     top: 270px;
-    margin-top: 20px;
-    padding: 20px;
-    background-color: #242526;
-    color: white;
-    text-align: center;
-}
-/*
-
-
-
-
-footer{
-    position: relative;
-    top: 270px;
-    margin-top: 20px;
     padding: 20px;
     background-color: #242526;
     color: white;
@@ -281,25 +271,76 @@ footer{
 .colored{
     color: crimson;
 }
-.body-course{
-    position:relative;
-    top: -20px;
+/*courses pages*/
+main.course-content{
+    position: relative;
+    top: 70px;
+    width: 100%;
+    color: black;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    padding-bottom: 10px;
 }
-@media screen and (max-width:1250px){
-    .intro-section{
+main.course-content section{
+    text-align: center;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+    width: 60%;
+    padding-bottom: 10px;
+    font-family: 'Gemunu Libre', sans-serif;
+}
+main.course-content h1{
+    font-family: 'Stick No Bills', sans-serif;
+    font-size: 3em;
+    font-weight: bolder;
+    margin-top: 10px;
+}
+main.course-content section img{
+    width: 100%;
+    margin: 20px;
+}
+main.course-content section p{
+    width: 90%;
+    margin: 10px;
+    font-size: var(--fontSizeP);
+}
+main.course-content section ul{
+    text-align: left;
+    margin-bottom: 10px;
+    width: 50%;
+    margin: auto;
+}
+main.course-content section li{
+    font-size: var(--fontSizeLi);
+    font-weight: bolder;
+}
+footer.footer-course{
+    position: relative;
+    top: 70px;
+    padding: 10px;
+    width: 100%;
+}
+
+@media (max-width:1260px){
+    main .intro-section{
         width: 80%;
     }
-    .about-section{
+    main .about-section{
         width: 80%;
     }
-    .course-section{
+    main .course-section{
         width: 80%;
     }
-    .ins-div{
-        width: 40%;
+    main .ins-div{
+        width: 30%;
     }
-}*/
-@media screen and (max-width: 970px) {
+}
+@media (max-width: 970px) {
     .nav-container .btn{
         display: block;
     }
@@ -376,63 +417,87 @@ footer{
         font-size: 1.3em;
     }
     /*homepage body part*/
-    /*.intro-section .article{
+    
+    main .intro-section{
+        width: 70%;
+    }
+    main .intro-section article{
         flex-direction: column;
     }
-    .intro-section{
-        width: 60%;
-    }
-    .intro-section .article video{
+    main .intro-section article video{
         max-width: 100%;
         order: 1;
     }
-    .intro-section .article p{
-        max-width: 100%;
+    main .intro-section article p{
+        width: 100%;
         order: 2;
     }
-    .about-section{
+    main .about-section{
         width: 50%;
     }
-    .about-section .card-container{
+    main .about-section .card-container{
         flex-direction: column;
     }
-    .course-section{
+    main .course-section{
         width: 50%;
     }
-    .course-section .courses-card-container{
+    main .course-section .courses-card-container{
         flex-direction: column;
         margin-bottom: 0;
     }
-    .course-section .courses-card-container .course-card{
+    main .course-section .courses-card-container .course-card{
         width: 90%;
         margin-bottom: 20px;
-    }*/
+    }
+    main .ins-div{
+        width: 40%;
+    }
+    /*course pages*/
+    main.course-content section{
+        width: 70%;
+    }
+    main.course-content section ul{
+        width: 70%;
+    }
+
 }
-/*@media screen and (max-width: 850px) {
-    .intro-section{
+@media (max-width: 850px) {
+    main .intro-section{
+        width: 70%;
+    }
+    main .about-section{
+        width: 70%;
+    }
+    main .course-section{
+        width: 70%;
+    }
+    main .ins-div{
+        width: 50%;
+    }
+    main.course-content section{
         width: 80%;
     }
-    .about-section{
-        width: 70%;
-    }
-    .course-section{
-        width: 70%;
-    }
-    .ins-div{
-        width: 60%;
+    main.course-content section ul{
+        width: 80%;
     }
 }
-@media screen and (max-width: 500px){
-    .intro-section{
+@media (max-width: 500px){
+    main .intro-section{
         width: 95%;
     }
-    .about-section{
+    main .about-section{
         width: 95%;
     }
-    .course-section{
+    main .course-section{
         width: 95%;
     }
-    .ins-div{
+    main .ins-div{
         width: 75%;
     }
-}*/
+    main.course-content section{
+        width: 95%;
+    }
+    main.course-content section ul{
+        width: 90%;
+    }
+}
