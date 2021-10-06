@@ -38,8 +38,8 @@
             </div>
         </nav>
         <main>
-            <div class="header">
-                <h1><span class="colored">Reg</span>ister</h1>
+            <div>
+                <h1 id="login-text"><span class="colored">Reg</span>ister</h1>
             </div>
             <form id="form" method="POST" class="form" action="./php/getdata.php" onsubmit="return validate();">
                 <div class="input">
@@ -58,14 +58,14 @@
                 </div>
                 <div class="input">
                     <label for="password">Password:</label>
-                    <input type="password" name="passwordName" placeholder="Password" id="password" autocomplete="off">
+                    <input type="password" name="passwordName" placeholder="Password" autocomplete="off" id="password">
                     <i class="fa fa-check-circle"></i>
                     <i class="fa fa-exclamation-circle"></i>
                     <span class="small">Please insert the password</span>
                 </div>
                 <div class="input">
                     <label for="c-password">Confirm Password:</label>
-                    <input type="password" name="password2name" placeholder="Confirm Password" id="c-password" autocomplete="off">
+                    <input type="password" name="password2name" placeholder="Confirm Password" autocomplete="off" id="c-password">
                     <i class="fa fa-check-circle"></i>
                     <i class="fa fa-exclamation-circle"></i>
                     <span class="small">Please confirm the password</span>
@@ -73,6 +73,7 @@
                 <div class="input">
                     <input type="submit" name="submitName" class="btn" value="Register">   
                 </div>
+            </form>
         </main>
         <script src="./js/logScript.js"></script>
     </body>

@@ -39,16 +39,20 @@
             </div>
         </nav>
         <main>
+            <div>
+                <h1 id="login-text"><span class="colored">Log</span>in</h1>
+            </div>
             <form id="login" action="php/login.php" method="POST">
-                <p id="login-text"><span class="colored">Log</span>in</p>
                 <div class="input">
+                    <label for="username">Username:</label>
                     <input type="text" id="username" placeholder="Username or e-mail" autocomplete="off" required>
                 </div>
                 <div class="input">
+                    <label for="password">Password:</label>
                     <input type="password" id="password" placeholder="Password" autocomplete="off" required>
                 </div>
                 <div class="input">
-                    <button class="btn">Login</button>   
+                    <input type="submit" name="submitAcc" class="btn" value="Login">  
                 </div>
                 <p id="login-register-text">Don't you have an account?<a href="registration.html"><span class="colored"> Register Here</span></a> </p>
             </form>
