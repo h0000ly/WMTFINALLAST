@@ -173,7 +173,7 @@ main .intro-section{
     display: flex;
     justify-content: space-around;
     flex-wrap: nowrap;
-    align-items: center;
+    min-height: 400px;
 }
 .about-section .card{
     width: 100%;
@@ -326,7 +326,7 @@ footer.footer-course{
     width: 100%;
 }
 
-@media (max-width:1260px){
+@media (max-width:1300px){
     main .intro-section{
         width: 80%;
     }
@@ -438,6 +438,7 @@ footer.footer-course{
     main .about-section .card-container{
         flex-direction: column;
     }
+    
     main .course-section{
         width: 50%;
     }
