@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta name="author" content="Roberto Negri">
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Gymtastic Login</title>
+        <link rel="stylesheet" href="css/loginStyle.css" type="text/css">
+        <link rel="stylesheet" href="css/style.css">
+        <link rel="icon" href="img/gym_logo.png">
+    </head>
+    <body class="body-course">
+        <nav>
+            <div class="nav-container">
+                <div class="logo"><a href="homepage.html"><span class="colored">Gym</span>tastic</a></div>
+                <input type="radio" name="slider" id="menu-btn">
+                <input type="radio" name="slider" id="close-btn">
+                <ul class="nav-links">
+                    <label for="close-btn" class="btn close-btn"><img src="images/close.svg" alt=""></label>
+                    <li><a href="homepage.html">Home</a></li>
+                    <li><a href="homepage.html#about-us">About</a></li>
+                    <li>
+                        <a class="desktop-item">Course</a>
+                        <input type="checkbox" id="showDrop">
+                        <label for="showDrop" class="mobile-item">Course</label>
+                        <ul class="drop-menu">
+                            <li><a href="homepage.html#courses">The Courses</a></li>
+                            <li><a href="meditation.html">Meditation</a></li>
+                            <li><a href="calisthenics.html">Calisthenics</a></li>
+                            <li><a href="crossfit.html">Crossfit</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="training.php">Your Training</a></li>
+                    <li><a href="login.html" class="active">Register/Login</a></li>
+                    <li><a href="homepage.html">Logout</a></li>
+                </ul>
+                <label for="menu-btn" class="btn menu-btn"><img src="images/open.svg" alt=""></label>
+            </div>
+        </nav>
+        <main>
+            <div class="header">
+                <h1><span class="colored">Reg</span>ister</h1>
+            </div>
+            <form id="form" method="POST" class="form" action="./php/getdata.php" onsubmit="return validate();">
+                <div class="input">
+                    <label for="username">Username:</label>
+                    <input type="text" name="usernameName" placeholder="Username" id="username" autocomplete="off">
+                    <i class="fa fa-check-circle"></i>
+                    <i class="fa fa-exclamation-circle"></i>
+                    <span class="small">Please insert username</span>
+                </div>
+                <div class="input">
+                    <label for="email">E-mail:</label>
+                    <input type="email" name="emailName" placeholder="E-mail" id="email" autocomplete="off">
+                    <i class="fa fa-check-circle"></i>
+                    <i class="fa fa-exclamation-circle"></i>
+                    <span class="small">Please insert e-mail</span>
+                </div>
+                <div class="input">
+                    <label for="password">Password:</label>
+                    <input type="password" name="passwordName" placeholder="Password" id="password" autocomplete="off">
+                    <i class="fa fa-check-circle"></i>
+                    <i class="fa fa-exclamation-circle"></i>
+                    <span class="small">Please insert the password</span>
+                </div>
+                <div class="input">
+                    <label for="c-password">Confirm Password:</label>
+                    <input type="password" name="password2name" placeholder="Confirm Password" id="c-password" autocomplete="off">
+                    <i class="fa fa-check-circle"></i>
+                    <i class="fa fa-exclamation-circle"></i>
+                    <span class="small">Please confirm the password</span>
+                </div>
+                <div class="input">
+                    <input type="submit" name="submitName" class="btn" value="Register">   
+                </div>
+        </main>
+        <script src="./js/logScript.js"></script>
+    </body>
+</html>

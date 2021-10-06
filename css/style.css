@@ -96,11 +96,11 @@ nav input{
     display: none;
 }
 /*parte body homepage*/
-body{
+body.homepage{
     background-color: #4d4d4d;
     width: 100%;
 }
-main{
+main.homepage{
     position:relative;
     top: 70px;
     width: 100%;
@@ -111,7 +111,7 @@ main{
     justify-content: center;
     font-family: 'Roboto Condensed', sans-serif;
 }
-main .ins-div{
+main.homepage .ins-div{
     position: relative;
     top: 50px;
     display: block;
@@ -122,7 +122,7 @@ main .ins-div{
     box-shadow: 0 0 5px 5px crimson;
     background-color: #242526;
 }
-main .intro-section{
+main.homepage .intro-section{
     width: 60%;
 }
 .intro-section article{
@@ -327,20 +327,20 @@ footer.footer-course{
 }
 
 @media (max-width:1300px){
-    main .intro-section{
+    main.homepage .intro-section{
         width: 80%;
     }
-    main .about-section{
+    main.homepage .about-section{
         width: 80%;
     }
-    main .course-section{
+    main.homepage .course-section{
         width: 80%;
     }
-    main .ins-div{
+    main.homepage .ins-div{
         width: 30%;
     }
 }
-@media (max-width: 970px) {
+@media (max-width: 990px) {
     .nav-container .btn{
         display: block;
     }
@@ -418,39 +418,39 @@ footer.footer-course{
     }
     /*homepage body part*/
     
-    main .intro-section{
+    main.homepage .intro-section{
         width: 70%;
     }
-    main .intro-section article{
+    main.homepage .intro-section article{
         flex-direction: column;
     }
-    main .intro-section article video{
+    main.homepage .intro-section article video{
         max-width: 100%;
         order: 1;
     }
-    main .intro-section article p{
+    main.homepage .intro-section article p{
         width: 100%;
         order: 2;
     }
-    main .about-section{
+    main.homepage .about-section{
         width: 50%;
     }
-    main .about-section .card-container{
+    main.homepage .about-section .card-container{
         flex-direction: column;
     }
     
-    main .course-section{
+    main.homepage .course-section{
         width: 50%;
     }
-    main .course-section .courses-card-container{
+    main.homepage .course-section .courses-card-container{
         flex-direction: column;
         margin-bottom: 0;
     }
-    main .course-section .courses-card-container .course-card{
+    main.homepage .course-section .courses-card-container .course-card{
         width: 90%;
         margin-bottom: 20px;
     }
-    main .ins-div{
+    main.homepage .ins-div{
         width: 40%;
     }
     /*course pages*/
@@ -463,16 +463,16 @@ footer.footer-course{
 
 }
 @media (max-width: 850px) {
-    main .intro-section{
+    main.homepage .intro-section{
         width: 70%;
     }
-    main .about-section{
+    main.homepage .about-section{
         width: 70%;
     }
-    main .course-section{
+    main.homepage .course-section{
         width: 70%;
     }
-    main .ins-div{
+    main.homepage .ins-div{
         width: 50%;
     }
     main.course-content section{
@@ -483,16 +483,16 @@ footer.footer-course{
     }
 }
 @media (max-width: 500px){
-    main .intro-section{
+    main.homepage .intro-section{
         width: 95%;
     }
-    main .about-section{
+    main.homepage .about-section{
         width: 95%;
     }
-    main .course-section{
+    main.homepage .course-section{
         width: 95%;
     }
-    main .ins-div{
+    main.homepage .ins-div{
         width: 75%;
     }
     main.course-content section{

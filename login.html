@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta name="author" content="Roberto Negri">
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Gymtastic Login</title>
+        <link rel="stylesheet" href="css/loginStyle.css" type="text/css">
+        <link rel="stylesheet" href="css/style.css">
+        <link rel="stylesheet" href="font-awesome-4.7.0/css/font-awesome.min.css">
+        <link rel="icon" href="img/gym_logo.png">
+    </head>
+    <body>
+        <nav>
+            <div class="nav-container">
+                <div class="logo"><a href="homepage.html"><span class="colored">Gym</span>tastic</a></div>
+                <input type="radio" name="slider" id="menu-btn">
+                <input type="radio" name="slider" id="close-btn">
+                <ul class="nav-links">
+                    <label for="close-btn" class="btn close-btn"><img src="images/close.svg" alt=""></label>
+                    <li><a href="homepage.html">Home</a></li>
+                    <li><a href="homepage.html#about-us">About</a></li>
+                    <li>
+                        <a class="desktop-item">Course</a>
+                        <input type="checkbox" id="showDrop">
+                        <label for="showDrop" class="mobile-item">Course</label>
+                        <ul class="drop-menu">
+                            <li><a href="homepage.html#courses">The Courses</a></li>
+                            <li><a href="meditation.html">Meditation</a></li>
+                            <li><a href="calisthenics.html">Calisthenics</a></li>
+                            <li><a href="crossfit.html">Crossfit</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="training.php">Your Training</a></li>
+                    <li><a href="login.html" class="active">Register/Login</a></li>
+                    <li><a href="homepage.html">Logout</a></li>
+                </ul>
+                <label for="menu-btn" class="btn menu-btn"><img src="images/open.svg" alt=""></label>
+            </div>
+        </nav>
+        <main>
+            <form id="login" action="php/login.php" method="POST">
+                <p id="login-text"><span class="colored">Log</span>in</p>
+                <div class="input">
+                    <input type="text" id="username" placeholder="Username or e-mail" autocomplete="off" required>
+                </div>
+                <div class="input">
+                    <input type="password" id="password" placeholder="Password" autocomplete="off" required>
+                </div>
+                <div class="input">
+                    <button class="btn">Login</button>   
+                </div>
+                <p id="login-register-text">Don't you have an account?<a href="register.html"><span class="colored"> Register Here</span></a> </p>
+            </form>
+        </main>
+        <script src="./js/logScript.js"></script>
+    </body>
+</html>
