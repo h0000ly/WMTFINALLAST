@@ -6,7 +6,7 @@
     font-family: 'Stick No Bills', sans-serif;
     box-sizing: border-box;
 }
-body.body-course{
+body{
     width: 100%;
     min-height: 100vh;
     background-image: linear-gradient(rgba(0,0,0,.5),rgba(0,0,0,.5)),url(/images/loginbackground.jpg);
@@ -15,7 +15,7 @@ body.body-course{
     background-repeat: no-repeat;
     color: #fff;
 }
-main>form{
+main{
     position: absolute;
     top: 50%;
     left: 50%;
@@ -30,85 +30,93 @@ main>form{
     overflow: hidden;
 }
 
-.header{
+main>div{
     text-align: center;
 }
 
-.header p{
+main>div h1{
     font-size: 3em;
 }
 
-.input{
+form>div{
     position: relative;
     margin: 20px auto;
 }
 
-.input label{
+form>div label{
     display: inline-block;
     font-size: 1.5em;
 }
 
-.input input{
+form>div input{
     display:block;
     width: 100%;
     height: 2em;
     font-size: 1.2em;
 }
 
-.input input:focus{
+form>div input:focus{
     outline: 0;
 }
 
 
-.input i{
+form>div i{
     visibility: hidden;
     position: absolute;
     top: 40px;
     right: 10px;
 }
 
-.input.success i.fa-check-circle{
+form>div.success i.fa-check-circle{
     color: green;
     visibility: visible;
 }
 
-.input.error i.fa-exclamation-circle{
+form>div.error i.fa-exclamation-circle{
     color: red;
     visibility: visible;
 }
 
-.input span{
+form>div span{
     color: red;
     position: absolute;
     visibility: hidden;
 }
 
-.input.error span{
+form>div.error span{
     visibility: visible;
 }
 
-.input input:focus{
+form input[type=text]:focus,
+form input[type=password]:focus,
+form input[type=email]:focus{
     border: 2px solid crimson;
-   
 }
 
-.container .btn{
+form input[type=submit]{
     display: block;
     position: relative;
-    top: 10px;
+    top: 15px;
     width: 100%;
     padding: 15px 20px;
     text-align: center;
     border:none;
     outline:none;
-    font-size: 1.2rem;
+    font-size: 1.3rem;
     cursor: pointer;
     height: 60px;
+    
 }
-.container .btn:hover{
+form input[type=submit]:hover{
     transform: translateY(-5px);
     background-color: crimson;
     color: #fff;
     font-size: 1.3rem;
     transition: .3s;
+}
+#login-register-text{
+    font-size: 1.2em;
+}
+#login-register-text a{
+    text-decoration: none;
 }

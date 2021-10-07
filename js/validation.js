@@ -7,7 +7,6 @@ function validate() {
     var emailValue = email.value.trim();
     var passwordValue = password.value.trim();
     var password2Value = password2.value.trim();
-    var error = "";
     if(usernameValue === ''){
         setError(username, 'Username field must be filled');
         return false;

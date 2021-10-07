@@ -7,9 +7,10 @@
         <title>Gymtastic Login</title>
         <link rel="stylesheet" href="css/loginStyle.css" type="text/css">
         <link rel="stylesheet" href="css/style.css">
+        <link rel="stylesheet" href="font-awesome-4.7.0/css/font-awesome.min.css">
         <link rel="icon" href="img/gym_logo.png">
     </head>
-    <body class="body-course">
+    <body>
         <nav>
             <div class="nav-container">
                 <div class="logo"><a href="homepage.html"><span class="colored">Gym</span>tastic</a></div>
@@ -39,9 +40,9 @@
         </nav>
         <main>
             <div class="header">
-                <p><span class="colored">Reg</span>ister</p>
+                <h1><span class="colored">Reg</span>ister</h1>
             </div>
-            <form id="form" method="POST" class="form" action="./php/getdata.php" onsubmit="return validate();">
+            <form id="register" method="POST" action="php/getdata.php" onsubmit="return validate();">
                 <div class="input">
                     <label for="username">Username:</label>
                     <input type="text" name="usernameName" placeholder="Username" id="username" autocomplete="off">
@@ -70,7 +71,7 @@
                     <i class="fa fa-exclamation-circle"></i>
                     <span class="small">Please confirm the password</span>
                 </div>
-                <div class="input">
+                <div>
                     <input type="submit" name="submitName" class="btn" value="Register">   
                 </div>
             </form>
