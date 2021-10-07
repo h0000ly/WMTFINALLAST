@@ -6,104 +6,109 @@
     font-family: 'Stick No Bills', sans-serif;
     box-sizing: border-box;
 }
-body{
+body.body-course{
     width: 100%;
     min-height: 100vh;
-    background-image: linear-gradient(rgba(0,0,0,.5),rgba(0,0,0,.5)),url(../images/loginbackground.jpg);
+    background-image: linear-gradient(rgba(0,0,0,.5),rgba(0,0,0,.5)),url(/images/loginbackground.jpg);
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
     color: #fff;
 }
-main{
+main>form{
     position: absolute;
-    display: block;
-    top: 45%;
+    top: 50%;
     left: 50%;
     width: 300px;
     min-height: 450px;
     background: rgba(0,0,0,.7);
     border-radius: 5px;
     box-shadow: 0 0 5px rgba(0,0,0,.3);
-    padding: 30px 30px;
+    padding: 40px 30px;
     margin-top: -250px;
     margin-left: -150px;
     overflow: hidden;
 }
-main>div{
+
+.header{
     text-align: center;
 }
-main>form{
-    color: #fff; 
-    font-weight: 16;
-    font-size: 1.1rem;
-    text-align: center;
-    margin-top: auto;
-    display: block;
-    text-transform: capitalize;
+
+.header p{
+    font-size: 3em;
 }
-#login-text{
-    font-size: 4rem;
-    margin:10px;
+
+.input{
+    position: relative;
+    margin: 20px auto;
 }
-form>div{
-    width:100%;
-    height: 50px;
-    margin-bottom: 45px;
-    color:#fff;
-    display: block;
-    text-align: left;
+
+.input label{
+    display: inline-block;
+    font-size: 1.5em;
 }
-form input{
+
+.input input{
+    display:block;
     width: 100%;
-    height: 100%;
-    border: 2px solid #e7e7e7;
-    padding: 15px 20px;
-    font-size: 1.1rem;
-    background: transparent;
-    outline: none;
-    transition: .3s;
-    color: #fff;
+    height: 2em;
+    font-size: 1.2em;
 }
-form input:focus{
-    border-color: crimson;
+
+.input input:focus{
+    outline: 0;
 }
-.fa-check-circle{
+
+
+.input i{
+    visibility: hidden;
+    position: absolute;
+    top: 40px;
+    right: 10px;
+}
+
+.input.success i.fa-check-circle{
     color: green;
+    visibility: visible;
 }
-.fa-exclamation-circle{
+
+.input.error i.fa-exclamation-circle{
     color: red;
+    visibility: visible;
 }
-form .btn{
+
+.input span{
+    color: red;
+    position: absolute;
+    visibility: hidden;
+}
+
+.input.error span{
+    visibility: visible;
+}
+
+.input input:focus{
+    border: 2px solid crimson;
+   
+}
+
+.container .btn{
     display: block;
+    position: relative;
+    top: 10px;
     width: 100%;
     padding: 15px 20px;
-    height: 60px;
     text-align: center;
     border:none;
     outline:none;
     font-size: 1.2rem;
     cursor: pointer;
-    margin-top: 60px;
-    border: 2px solid white;
-    background-color: #fff;
-    color: black;
+    height: 60px;
 }
-form .btn:hover{
+.container .btn:hover{
     transform: translateY(-5px);
     background-color: crimson;
     color: #fff;
     font-size: 1.3rem;
     transition: .3s;
-}
-#login-register-text{
-    display: block;
-    width: 100%;
-    text-align: center;
-    color: #fff;
-    font-weight: 600;
-    margin-bottom: 10px;
-}
-#login-register-text a{
-    text-decoration: none;
 }
